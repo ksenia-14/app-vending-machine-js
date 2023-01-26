@@ -1,0 +1,27 @@
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, max-content);
+}
+
+table, th, td {
+  border: solid 1px black;
+  border-collapse: collapse;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+  background-color: rgba(171, 222, 255, 0.642);
+  border: solid 1px rgb(59, 110, 145);
+  border-radius: 30px;
+  margin-top: 20px;
+  height: 60px;
+  width: 200px;
+  justify-self: center;
+  box-shadow: 0px 3px 8px rgba(26, 26, 26, 0.66), inset 0px 2px 3px rgba(47, 0, 0, 0.605);
+  cursor: pointer;
+}
+
+button:active{
+  box-shadow: 0px 3px 4px rgb(26, 26, 26) inset, 0px 2px 3px rgb(47, 0, 0);
+}

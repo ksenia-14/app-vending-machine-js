@@ -1,0 +1,45 @@
+.money-section{
+  margin-left: 15px;
+  margin-right: 15px;
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: repeat(8,max-content);
+}
+
+.money-string{
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+
+/* .title{
+  grid-column: 1/3;
+} */
+
+.banknote{
+  height: 120px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.quantity{
+  align-self: center;
+  margin: 10px;
+
+  font-size: 20px;
+}
+
+.coin-section{
+  display: grid;
+  grid-template-columns: max-content max-content ;
+  grid-template-rows: max-content max-content;
+}
+
+.coin{
+  height: 80px;
+  width: auto;
+  margin: 5px;
+}
+
+
+
+

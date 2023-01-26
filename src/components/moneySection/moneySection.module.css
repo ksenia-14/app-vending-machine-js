@@ -1,0 +1,28 @@
+.money-section{
+  margin-left: 15px;
+  margin-right: 15px;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: repeat(7,max-content);
+}
+
+.banknote{
+  height: 120px;
+  width: auto;
+  margin-bottom: 10px;
+  transition: 0.7s;
+  cursor: pointer; 
+}
+
+.banknote:hover{
+  margin-left: 20px;
+}
+
+.banknote:active{
+  transition: 0s;
+  filter: contrast(120%);
+}
+
+
+
+
