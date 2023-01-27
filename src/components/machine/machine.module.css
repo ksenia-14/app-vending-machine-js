@@ -88,6 +88,8 @@
   margin: 10px;
   margin-top: 0;
   box-shadow: inset 0px -20px 10px 17px rgb(49 82 150), inset 0px 2px 3px rgb(47, 0, 0);
+  display: grid;
+  justify-items: center;
 }
 
 .operation-section {
