@@ -6,6 +6,23 @@ const Cash = () => {
   const context = React.useContext(AppContext)  // использование контекста
   const shortid = require('shortid'); // генерация ключей
 
+  /** ********************************************************
+  * @brief  Сброс сдачи до начальных значений.
+  * @param  Нет.
+  */
+  const setInitMoney = () => {
+    context.setBanknotes(context.initBanknotes)
+    context.setCoins(context.initCoins)
+  }
+
+  /** ********************************************************
+  * @brief  Восполнение количества продуктов до начальных значений.
+  * @param  Нет.
+  */
+  const setInitProducts = () => {
+    context.setProducts(context.initProducts)
+  }
+
   React.useEffect(() => {
 
   }, [context.render])
@@ -54,8 +71,8 @@ const Cash = () => {
           })}
         </tbody>
       </table>
-      <button>Добавить сдачу в автомат</button>
-      <button>Добавить товары в автомат</button>
+      <button onClick={setInitMoney}>Добавить сдачу в автомат</button>
+      <button onClick={setInitProducts}>Добавить товары в автомат</button>
     </div>
   )
 }
